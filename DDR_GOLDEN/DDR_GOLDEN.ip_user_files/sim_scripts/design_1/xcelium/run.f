@@ -216,8 +216,7 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
   "../../../bd/design_1/sim/design_1.v" \
-  "../../../bd/design_1/ip/design_1_bram_test_0_0/sim/design_1_bram_test_0_0.v" \
-  "../../../bd/design_1/ipshared/cc4f/axi4.v" \
+  "../../../bd/design_1/ipshared/1f54/axi4.v" \
   "../../../bd/design_1/ip/design_1_axi_ram_0_0/sim/design_1_axi_ram_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_18 \

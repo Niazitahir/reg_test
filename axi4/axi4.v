@@ -1,3 +1,29 @@
+/*
+
+Copyright (c) 2018 Alex Forencich
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+// Language: Verilog 2001
+
 `resetall
 `timescale 1ns / 1ps
 `default_nettype none
@@ -118,6 +144,7 @@ reg s_axi_rlast_pipe_reg = 1'b0;
 reg s_axi_rvalid_pipe_reg = 1'b0;
 
 // (* RAM_STYLE="BLOCK" *)
+(* RAM_STYLE = "distributed" *)
 reg [DATA_WIDTH-1:0] mem[(2**VALID_ADDR_WIDTH)-1:0];
 
 wire [VALID_ADDR_WIDTH-1:0] s_axi_awaddr_valid = s_axi_awaddr >> (ADDR_WIDTH - VALID_ADDR_WIDTH);
@@ -139,31 +166,15 @@ assign s_axi_rvalid = PIPELINE_OUTPUT ? s_axi_rvalid_pipe_reg : s_axi_rvalid_reg
 
 integer i, j;
 
-
-localparam MAX_SIZE = 1023;
-(* ram_style = "distributed" *)
-reg [31:0] local_h [0:1023];
-(* ram_style = "distributed" *)
-reg [31:0] ADB [0:1023];
-(* ram_style = "distributed" *)
-reg [31:0] Weights [0:1023];
-(* ram_style = "distributed" *)
-reg [31:0] State [0:MAX_SIZE];
-(* ram_style = "distributed" *)
-reg [31:0] Ising [0:MAX_SIZE];
-(* ram_style = "distributed" *)
-reg [31:0] ctrl_reg;
-
-
-// initial begin
-//     // two nested loops for smaller number of iterations per loop
-//     // workaround for synthesizer complaints about large loop counts
-//     for (i = 0; i < 2**VALID_ADDR_WIDTH; i = i + 2**(VALID_ADDR_WIDTH/2)) begin
-//         for (j = i; j < i + 2**(VALID_ADDR_WIDTH/2); j = j + 1) begin
-//             mem[j] = 0;
-//         end
-//     end
-//end
+initial begin
+    // two nested loops for smaller number of iterations per loop
+    // workaround for synthesizer complaints about large loop counts
+    for (i = 0; i < 2**VALID_ADDR_WIDTH; i = i + 2**(VALID_ADDR_WIDTH/2)) begin
+        for (j = i; j < i + 2**(VALID_ADDR_WIDTH/2); j = j + 1) begin
+            mem[j] = 0;
+        end
+    end
+end
 
 always @* begin
     write_state_next = WRITE_STATE_IDLE;
@@ -237,9 +248,6 @@ always @* begin
         end
     endcase
 end
-wire [31:0] waddr = write_addr_reg - 32'h44A00000;
-wire [11:0] windex = waddr[11:0];     // offset inside region
-wire [15:0] wregion = waddr[15:12];   // 4 KB regions
 
 always @(posedge clk) begin
     write_state_reg <= write_state_next;
@@ -254,21 +262,12 @@ always @(posedge clk) begin
     s_axi_wready_reg <= s_axi_wready_next;
     s_axi_bid_reg <= s_axi_bid_next;
     s_axi_bvalid_reg <= s_axi_bvalid_next;
-    if (mem_wr_en) begin
-        case(wregion)
-            4'h0: local_h[windex[3:0]] <= s_axi_wdata;
-            4'h1: ADB[windex[3:0]]     <= s_axi_wdata;
-            4'h2: Weights[windex[3:0]] <= s_axi_wdata;
-            4'h3: State[windex[3:0]]   <= s_axi_wdata;
-            4'h4: Ising[windex[3:0]]   <= s_axi_wdata;
-            4'h5: ctrl_reg            <= s_axi_wdata;
-        endcase
+
+    for (i = 0; i < WORD_WIDTH; i = i + 1) begin
+        if (mem_wr_en & s_axi_wstrb[i]) begin
+            mem[write_addr_valid][WORD_SIZE*i +: WORD_SIZE] <= s_axi_wdata[WORD_SIZE*i +: WORD_SIZE];
+        end
     end
-    // for (i = 0; i < WORD_WIDTH; i = i + 1) begin
-    //     if (mem_wr_en & s_axi_wstrb[i]) begin
-    //         mem[write_addr_valid][WORD_SIZE*i +: WORD_SIZE] <= s_axi_wdata[WORD_SIZE*i +: WORD_SIZE];
-    //     end
-    // end
 
     if (rst) begin
         write_state_reg <= WRITE_STATE_IDLE;
@@ -335,9 +334,6 @@ always @* begin
         end
     endcase
 end
-wire [31:0] raddr = read_addr_reg - 32'h44A00000;
-wire [11:0] rindex = raddr[11:0];     // offset inside region
-wire [15:0] rregion = raddr[15:12];   // 4 KB regions
 
 always @(posedge clk) begin
     read_state_reg <= read_state_next;
@@ -354,15 +350,7 @@ always @(posedge clk) begin
     s_axi_rvalid_reg <= s_axi_rvalid_next;
 
     if (mem_rd_en) begin
-        case(rregion)
-            4'h0: local_h[rindex[3:0]] <= s_axi_wdata;
-            4'h1: ADB[rindex[3:0]]     <= s_axi_wdata;
-            4'h2: Weights[rindex[3:0]] <= s_axi_wdata;
-            4'h3: State[rindex[3:0]]   <= s_axi_wdata;
-            4'h4: Ising[rindex[3:0]]   <= s_axi_wdata;
-            4'h5: ctrl_reg            <= s_axi_wdata;
-        endcase
-
+        s_axi_rdata_reg <= mem[read_addr_valid];
     end
 
     if (!s_axi_rvalid_pipe_reg || s_axi_rready) begin

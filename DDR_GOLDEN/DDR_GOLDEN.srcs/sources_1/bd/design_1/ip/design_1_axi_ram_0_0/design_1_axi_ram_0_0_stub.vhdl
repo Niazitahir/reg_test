@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Thu Mar 19 18:59:33 2026
+-- Date        : Thu Mar 19 19:15:58 2026
 -- Host        : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0_stub.vhdl

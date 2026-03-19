@@ -19,98 +19,98 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2512809 
+INFO: Helper process launched with PID 2564708 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1401.902 ; gain = 53.027 ; free physical = 5242 ; free virtual = 74451
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1400.902 ; gain = 56.027 ; free physical = 5307 ; free virtual = 74592
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ram_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_ram_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ram_0_0' (2#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_ram_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_bram_ctrl_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_bram_ctrl_0_0' (1#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ram_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_ram_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ram_0_0' (2#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_ram_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_ram_0' of module 'design_1_axi_ram_0_0' requires 37 connections, but only 35 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:354]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (3#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (4#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (3#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (4#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'design_1_blk_mem_gen_0_0' requires 8 connections, but only 7 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:413]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_clk_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' requires 4 connections, but only 3 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:421]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (6#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (7#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (6#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (7#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_microblaze_0_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 126 connections, but only 108 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:438]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (8#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (8#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:928]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3124]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (9#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (10#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (9#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (10#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3475]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (11#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3124]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3532]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (12#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3532]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3804]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (13#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (14#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (13#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (14#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 54 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4155]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (15#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:3804]
 INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4212]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (16#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (17#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (16#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (17#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (18#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4212]
 INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4630]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (19#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (19#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_ds_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_3' requires 76 connections, but only 72 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4925]
 INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (20#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:4630]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5234]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (21#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (22#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (21#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (22#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_0' requires 72 connections, but only 70 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5549]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (23#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5234]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_2REGHR' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5622]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (24#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (24#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_1' requires 72 connections, but only 70 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5901]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_2REGHR' (25#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5622]
 INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1R40M8T' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5974]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (26#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (26#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_auto_us_2_stub.v:6]
 WARNING: [Synth 8-350] instance 'auto_us' of module 'design_1_auto_us_2' requires 34 connections, but only 33 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6109]
 INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1R40M8T' (27#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5974]
 INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_3DF69O' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6145]
 INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_3DF69O' (28#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6145]
 INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_1TRPPG8' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6417]
 INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_1TRPPG8' (29#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:6417]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (30#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (30#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (31#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:928]
 WARNING: [Synth 8-350] instance 'microblaze_0_axi_periph' of module 'design_1_microblaze_0_axi_periph_0' requires 284 connections, but only 262 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:573]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5000]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (32#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (33#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (32#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (33#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5146]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (34#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (35#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (34#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (35#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5192]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (36#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (36#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_lmb_bram_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5217]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (37#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:5000]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
@@ -151,11 +151,11 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/ece53
 	Parameter NUM_PORTS bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (38#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (39#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_mig_7series_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (40#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (40#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_mig_7series_0_0_stub.v:5]
 WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 66 connections, but only 55 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:861]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (41#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2512766-khan-biggiecheese/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (41#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/.Xil/Vivado-2564653-khan-biggiecheese/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_mig_7series_0_81M' of module 'design_1_rst_mig_7series_0_81M_0' requires 10 connections, but only 8 given [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:917]
 WARNING: [Synth 8-3848] Net test_pass_0 in module/entity design_1 does not have driver. [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:50]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (42#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v:13]
@@ -262,7 +262,7 @@ WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_A
 WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_AXI_araddr[13]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1449.652 ; gain = 100.777 ; free physical = 5192 ; free virtual = 74402
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1449.652 ; gain = 104.777 ; free physical = 5289 ; free virtual = 74575
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -275,10 +275,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1449.652 ; gain = 100.777 ; free physical = 5259 ; free virtual = 74469
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1449.652 ; gain = 104.777 ; free physical = 5327 ; free virtual = 74613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1449.652 ; gain = 100.777 ; free physical = 5259 ; free virtual = 74469
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1449.652 ; gain = 104.777 ; free physical = 5327 ; free virtual = 74613
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -447,26 +447,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5028 ; free virtual = 74238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5073 ; free virtual = 74358
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5028 ; free virtual = 74238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5072 ; free virtual = 74357
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5028 ; free virtual = 74238
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5028 ; free virtual = 74238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5072 ; free virtual = 74357
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5072 ; free virtual = 74357
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '12.308', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5139 ; free virtual = 74349
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5171 ; free virtual = 74457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5139 ; free virtual = 74349
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5175 ; free virtual = 74461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -596,10 +596,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m0
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5141 ; free virtual = 74351
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5168 ; free virtual = 74454
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5137 ; free virtual = 74348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5163 ; free virtual = 74450
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -635,7 +635,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5125 ; free virtual = 74338
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5149 ; free virtual = 74439
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -660,13 +660,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/axi_bram_ctrl_0/bram_clk_a' to pin 'design_1_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
 INFO: [Synth 8-5819] Moved 12 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5016 ; free virtual = 74230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5053 ; free virtual = 74342
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5016 ; free virtual = 74230
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5053 ; free virtual = 74342
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -678,7 +678,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 5014 ; free virtual = 74228
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5036 ; free virtual = 74325
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -702,7 +702,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5040 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -715,7 +715,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5040 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -727,25 +727,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5040 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5040 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5040 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5041 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -838,25 +838,25 @@ Report Instance Areas:
 |12    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5041 ; free virtual = 74330
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1804.535 ; gain = 100.777 ; free physical = 4975 ; free virtual = 74188
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4975 ; free virtual = 74188
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1804.535 ; gain = 104.777 ; free physical = 5099 ; free virtual = 74388
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5099 ; free virtual = 74388
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 4944 ; free virtual = 74157
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5043 ; free virtual = 74332
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 116 Infos, 220 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1804.535 ; gain = 455.660 ; free physical = 4962 ; free virtual = 74175
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 4962 ; free virtual = 74175
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1804.535 ; gain = 459.660 ; free physical = 5043 ; free virtual = 74332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.535 ; gain = 0.000 ; free physical = 5043 ; free virtual = 74332
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 19:00:46 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 19:16:27 2026...

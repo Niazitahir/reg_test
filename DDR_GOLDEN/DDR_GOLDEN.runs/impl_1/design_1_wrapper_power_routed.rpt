@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Thu Mar 19 19:03:38 2026
+| Date             : Thu Mar 19 19:24:12 2026
 | Host             : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.189        |
+| Total On-Chip Power (W)  | 1.238        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.080        |
+| Dynamic (W)              | 1.129        |
 | Device Static (W)        | 0.109        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 79.6         |
-| Junction Temperature (C) | 30.4         |
+| Max Ambient (C)          | 79.4         |
+| Junction Temperature (C) | 30.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.046 |       25 |       --- |             --- |
-| Slice Logic              |     0.013 |    28028 |       --- |             --- |
-|   LUT as Logic           |     0.011 |    10809 |     63400 |           17.05 |
-|   LUT as Distributed RAM |    <0.001 |      832 |     19000 |            4.38 |
-|   Register               |    <0.001 |    11005 |    126800 |            8.68 |
-|   CARRY4                 |    <0.001 |      256 |     15850 |            1.62 |
-|   F7/F8 Muxes            |    <0.001 |      335 |     63400 |            0.53 |
+| Clocks                   |     0.060 |       25 |       --- |             --- |
+| Slice Logic              |     0.015 |    55959 |       --- |             --- |
+|   LUT as Logic           |     0.012 |    12836 |     63400 |           20.25 |
+|   LUT as Distributed RAM |    <0.001 |    17216 |     19000 |           90.61 |
+|   Register               |    <0.001 |    11355 |    126800 |            8.96 |
+|   CARRY4                 |    <0.001 |      266 |     15850 |            1.68 |
+|   F7/F8 Muxes            |    <0.001 |     9327 |     63400 |           14.71 |
 |   LUT as Shift Register  |    <0.001 |      486 |     19000 |            2.56 |
-|   Others                 |    <0.001 |     1199 |       --- |             --- |
-| Signals                  |     0.019 |    20512 |       --- |             --- |
+|   Others                 |    <0.001 |     1198 |       --- |             --- |
+| Signals                  |     0.052 |    26159 |       --- |             --- |
 | Block RAM                |     0.024 |       16 |       135 |           11.85 |
 | MMCM                     |     0.219 |        2 |         6 |           33.33 |
 | PLL                      |     0.115 |        1 |         6 |           16.67 |
-| I/O                      |     0.530 |       51 |       210 |           24.29 |
+| I/O                      |     0.531 |       51 |       210 |           24.29 |
 | PHASER                   |     0.110 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.109 |          |           |                 |
-| Total                    |     1.189 |          |           |                 |
+| Total                    |     1.238 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.155 |       0.137 |      0.019 |
+| Vccint    |       1.000 |     0.204 |       0.185 |      0.019 |
 | Vccaux    |       1.800 |     0.302 |       0.283 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -170,27 +170,28 @@ Table of Contents
 +--------------------------------------+-----------+
 | Name                                 | Power (W) |
 +--------------------------------------+-----------+
-| design_1_wrapper                     |     1.080 |
-|   design_1_i                         |     1.080 |
-|     blk_mem_gen_0                    |     0.002 |
-|       U0                             |     0.002 |
+| design_1_wrapper                     |     1.129 |
+|   design_1_i                         |     1.128 |
+|     axi_ram_0                        |     0.060 |
+|       inst                           |     0.060 |
+|     blk_mem_gen_0                    |     0.003 |
+|       U0                             |     0.003 |
 |     clk_wiz_0                        |     0.107 |
 |       inst                           |     0.107 |
-|     microblaze_0                     |     0.033 |
-|       U0                             |     0.033 |
-|     microblaze_0_axi_periph          |     0.023 |
-|       m00_couplers                   |     0.004 |
-|       m02_couplers                   |     0.003 |
-|       m03_couplers                   |     0.005 |
-|       m04_couplers                   |     0.002 |
-|       s00_couplers                   |     0.002 |
-|       s01_couplers                   |     0.002 |
-|       s02_couplers                   |     0.001 |
+|     microblaze_0                     |     0.032 |
+|       U0                             |     0.032 |
+|     microblaze_0_axi_periph          |     0.018 |
+|       m00_couplers                   |     0.003 |
+|       m02_couplers                   |     0.002 |
+|       m03_couplers                   |     0.004 |
+|       m04_couplers                   |     0.001 |
+|       s00_couplers                   |     0.001 |
+|       s01_couplers                   |     0.001 |
 |       xbar                           |     0.004 |
 |     microblaze_0_local_memory        |     0.004 |
 |       lmb_bram                       |     0.004 |
-|     mig_7series_0                    |     0.908 |
-|       u_design_1_mig_7series_0_0_mig |     0.907 |
+|     mig_7series_0                    |     0.903 |
+|       u_design_1_mig_7series_0_0_mig |     0.902 |
 +--------------------------------------+-----------+
 
 
