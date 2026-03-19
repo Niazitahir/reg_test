@@ -1,0 +1,1127 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Mar 19 15:50:15 2026
+# Process ID: 19920
+# Current directory: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4488 C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.xpr
+# Log file: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/vivado.log
+# Journal file: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/board.prj'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_1/mig_a.prj'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/mem'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/bram_test'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:12 . Memory (MB): peak = 948.082 ; gain = 260.504
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+open_bd_design {C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_81M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding cell -- xilinx.com:module_ref:bram_test:1.0 - bram_test_0
+Adding cell -- xilinx.com:user:axi_ram:1.0 - axi_ram_0
+Successfully read diagram <design_1> from BD file <C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1680.367 ; gain = 33.031
+connect_bd_net [get_bd_pins axi_ram_0/bram_doutb] [get_bd_pins blk_mem_gen_1/doutb]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/doutb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+connect_bd_net [get_bd_pins axi_ram_0/bram_douta] [get_bd_pins blk_mem_gen_1/douta]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins axi_ram_0/bram_wea] [get_bd_pins blk_mem_gen_1/wea]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/wea is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins axi_ram_0/bram_addra] [get_bd_pins blk_mem_gen_1/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins axi_ram_0/bram_dina] [get_bd_pins blk_mem_gen_1/dina]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_1/dina is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins axi_ram_0/bram_ena] [get_bd_pins blk_mem_gen_1/ena]
+connect_bd_net [get_bd_pins axi_ram_0/clk] [get_bd_pins mig_7series_0/ui_clk]
+connect_bd_net [get_bd_pins axi_ram_0/rst] [get_bd_pins rst_mig_7series_0_81M/peripheral_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_ram_0/s_axi] -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/M04_AXI]
+save_bd_design
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+assign_bd_address [get_bd_addr_segs {axi_ram_0/s_axi/reg0 }]
+</axi_ram_0/s_axi/reg0> is being mapped into </microblaze_0/Data> at <0x44A00000 [ 64K ]>
+</axi_ram_0/s_axi/reg0> is being mapped into </microblaze_0/Instruction> at <0x44A00000 [ 64K ]>
+save_bd_design
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_1> to default.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x44A00000 and high address C_DCACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x44A00000 and high address C_ICACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [BD 41-927] Following properties on pin /bram_test_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/bram_test_0/bram_dout
+/bram_test_0/bram_ready
+/axi_ram_0/a_we
+/axi_ram_0/a_addr
+/axi_ram_0/a_din
+/axi_ram_0/b_en
+/axi_ram_0/b_we
+/axi_ram_0/b_addr
+/axi_ram_0/b_din
+
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_1/web'(1) to net 'axi_ram_0_bram_web'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_1/wea'(1) to net 'axi_ram_0_bram_wea'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_1/web'(1) to net 'axi_ram_0_bram_web'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/blk_mem_gen_1/wea'(1) to net 'axi_ram_0_bram_wea'(4) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ram_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
+Exporting to file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = e6a5ebe2fc54cb73; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = e6a5ebe2fc54cb73; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = 57c9bc9702aa53e8; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 22f62a718e2d22ed; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = 8ad8eb077f9e97f5; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 22f62a718e2d22ed; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 29167a26398ab5df; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = f8119acbae39a40e; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = e0bcb4410b53d716; cache size = 406.464 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = e0bcb4410b53d716; cache size = 406.464 MB.
+[Thu Mar 19 15:53:56 2026] Launched design_1_xbar_0_synth_1, design_1_auto_ds_3_synth_1, design_1_microblaze_0_0_synth_1, design_1_axi_ram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_ds_3_synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_auto_ds_3_synth_1/runme.log
+design_1_microblaze_0_0_synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_axi_ram_0_0_synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/runme.log
+synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/runme.log
+[Thu Mar 19 15:53:56 2026] Launched impl_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1680.367 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Mar 19 15:59:37 2026] Launched synth_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/runme.log
+[Thu Mar 19 15:59:37 2026] Launched impl_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Mar 19 16:04:57 2026] Launched impl_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/runme.log
+file copy -force C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/design_1_wrapper.sysdef C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name axi_ram_v1_0_project -directory C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.tmp/axi_ram_v1_0_project c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/khanm/downloads/memory_controller-main/memory_controller-main/ddr_golden/ddr_golden.tmp/axi_ram_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1680.367 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/mem'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/bram_test'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4/axi4.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1680.367 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SIZE' by 1023 for port or parameter 'State'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SIZE' by 1023 for port or parameter 'Ising'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_reg' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_next' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid_b' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid_b' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+INFO: [IP_Flow 19-3166] Bus Interface 's_axi': References existing memory map 's_axi'.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project DDR_GOLDEN
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/mem'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/bram_test'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4'.
+report_ip_status -name ip_status
+current_project axi_ram_v1_0_project
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [BD 5-104] A block design must be open to run this command. Please create/open a block design.
+ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+ERROR: [#UNDEF] Tcl Error in evaluating proc can_apply_rule : ERROR: [Common 17-39] 'get_bd_intf_ports' failed due to earlier errors.
+current_project DDR_GOLDEN
+upgrade_ip -vlnv xilinx.com:user:axi_ram:1.0 [get_ips  design_1_axi_ram_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_ram_0_0 (axi_ram_v1_0 1.0) from revision 4 to revision 5
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'a_addr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'a_din'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'a_dout'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'a_en'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'a_we'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'b_addr'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'b_din'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'b_dout'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'b_en'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'b_we'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_addra'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_addrb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_dina'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_dinb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_douta'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_doutb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_ena'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_enb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_rsta'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_rstb'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_wea'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'bram_web'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_axi_ram_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'a_en' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'Net' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_ena' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'Net' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_wea' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_wea' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_addra' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_addra' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_dina' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_dina' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_douta' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'blk_mem_gen_1_douta' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_enb' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_enb' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_web' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_web' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_addrb' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_addrb' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_dinb' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'axi_ram_0_bram_dinb' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'bram_doutb' is not found on the upgraded version of the cell '/axi_ram_0'. Its connection to the net 'blk_mem_gen_1_doutb' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_axi_ram_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_dinb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_addrb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_web> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_enb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_wea> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_addra> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_dina> has no source
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_axi_ram_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_1> to default.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x44A00000 and high address C_DCACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x44A00000 and high address C_ICACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [BD 41-927] Following properties on pin /bram_test_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/blk_mem_gen_1/ena
+/blk_mem_gen_1/wea
+/blk_mem_gen_1/addra
+/blk_mem_gen_1/dina
+/blk_mem_gen_1/enb
+/blk_mem_gen_1/web
+/blk_mem_gen_1/addrb
+/blk_mem_gen_1/dinb
+/bram_test_0/bram_dout
+/bram_test_0/bram_ready
+
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_dinb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_addrb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_web> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_enb> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_wea> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_addra> has no source
+WARNING: [BD 41-597] NET <axi_ram_0_bram_dina> has no source
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_dinb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_addrb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_web is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_enb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_wea is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_addra is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_dina is not connected to a valid source.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_dinb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_addrb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_web is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_enb is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_wea is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_addra is not connected to a valid source.
+WARNING: [BD 41-166] The net:axi_ram_0_bram_dina is not connected to a valid source.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ram_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
+Exporting to file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1680.367 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all design_1_axi_ram_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = f8119acbae39a40e; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = e0bcb4410b53d716; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = e0bcb4410b53d716; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = 8ad8eb077f9e97f5; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = e6a5ebe2fc54cb73; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 22f62a718e2d22ed; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = e6a5ebe2fc54cb73; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 22f62a718e2d22ed; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = 57c9bc9702aa53e8; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 29167a26398ab5df; cache size = 421.099 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_ds_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = 3f015fbd4df1bca7; cache size = 421.099 MB.
+export_ip_user_files -of_objects [get_files C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 16 design_1_axi_ram_0_0_synth_1
+[Thu Mar 19 17:04:09 2026] Launched design_1_axi_ram_0_0_synth_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.ip_user_files -ipstatic_source_dir C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/compile_simlib/modelsim} {questa=C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/compile_simlib/questa} {riviera=C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/compile_simlib/riviera} {activehdl=C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run design_1_axi_ram_0_0_synth_1
+delete_bd_objs [get_bd_nets axi_ram_0_bram_wea] [get_bd_nets axi_ram_0_bram_addra] [get_bd_nets axi_ram_0_bram_dina] [get_bd_nets blk_mem_gen_1_douta] [get_bd_nets blk_mem_gen_1_doutb] [get_bd_nets Net] [get_bd_nets axi_ram_0_bram_enb] [get_bd_nets axi_ram_0_bram_web] [get_bd_nets axi_ram_0_bram_addrb] [get_bd_nets axi_ram_0_bram_dinb] [get_bd_cells blk_mem_gen_1]
+save_bd_design
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '3' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'YES' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'ID_WIDTH' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-721] Attempt to set value 'NO' on disabled parameter 'SUPPORTS_NARROW_BURST' of cell '/axi_bram_ctrl_0' is ignored
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The D-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_DC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x44A00000 and high address C_DCACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0x88000000-0x8FFFFFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:11.0-14] /microblaze_0: The I-cache cacheable segment 0x44A00000 - 0x44A0FFFF does not include the M_AXI_IC segment 0xC0000000-0xC0001FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x44A00000 and high address C_ICACHE_HIGHADDR to 0x44A0FFFF.
+WARNING: [BD 41-927] Following properties on pin /bram_test_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+WARNING: [BD 41-927] Following properties on pin /axi_ram_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_mig_7series_0_0_ui_clk 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/bram_test_0/bram_dout
+/bram_test_0/bram_ready
+
+Wrote  : <C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_ram_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s02_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
+Exporting to file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = e6a5ebe2fc54cb73; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = e6a5ebe2fc54cb73; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = 8ad8eb077f9e97f5; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = 57c9bc9702aa53e8; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = 3f015fbd4df1bca7; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 22f62a718e2d22ed; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 22f62a718e2d22ed; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 29167a26398ab5df; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = f8119acbae39a40e; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = e0bcb4410b53d716; cache size = 421.099 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = e0bcb4410b53d716; cache size = 421.099 MB.
+[Thu Mar 19 17:05:32 2026] Launched design_1_axi_ram_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_ram_0_0_synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/runme.log
+synth_1: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/runme.log
+[Thu Mar 19 17:05:32 2026] Launched impl_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1680.367 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2865.180 ; gain = 10.027
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2865.180 ; gain = 10.027
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2865.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 361 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 78 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 192 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 7 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 3035.906 ; gain = 762.555
+open_report: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3122.078 ; gain = 70.234
+file copy -force C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/design_1_wrapper.sysdef C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+
+open_bd_design {C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Mar 19 17:55:32 2026] Launched impl_1...
+Run output will be captured here: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/runme.log
+file copy -force C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/design_1_wrapper.sysdef C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+
+file mkdir C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk
+file copy -force C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/impl_1/design_1_wrapper.sysdef C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk -hwspec C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp' for cell 'design_1_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0.dcp' for cell 'design_1_i/axi_ram_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.dcp' for cell 'design_1_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_bram_test_0_0/design_1_bram_test_0_0.dcp' for cell 'design_1_i/bram_test_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0.dcp' for cell 'design_1_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.dcp' for cell 'design_1_i/rst_mig_7series_0_81M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 1319 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc:50]
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_board.xdc] for cell 'design_1_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_board.xdc] for cell 'design_1_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xdc] for cell 'design_1_i/rst_mig_7series_0_81M/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xdc] for cell 'design_1_i/rst_mig_7series_0_81M/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0_board.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0_board.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[6]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[11]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[24]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[25]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[28]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[30]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[8]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[2]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[3]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[31]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[5]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[13]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[15]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[19]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[22]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[26]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[7]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[10]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[18]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[20]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[12]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[0]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[1]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[23]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[29]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[27]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[4]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[9]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[14]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[16]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[17]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WDATA[21]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[6]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[1]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[8]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[9]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[11]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[21]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[31]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[22]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[23]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[24]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[0]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[7]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[10]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[15]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[18]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[19]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[2]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[3]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[4]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[13]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[14]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[16]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[20]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[29]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[27]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[25]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[28]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[26]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[5]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[12]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[17]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWADDR[30]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WSTRB[1]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WSTRB[2]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:174]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWREADY'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_BVALID'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WVALID'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WSTRB[0]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WSTRB[3]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_AWVALID'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:180]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:180]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_BREADY'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0/M_AXI_WREADY'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[3]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:304]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[6]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:305]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:305]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[9]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[28]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[16]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[20]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[20]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[23]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:311]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:311]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[30]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[4]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:313]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:313]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[4]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:314]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:314]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[15]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[31]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:316]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:316]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[14]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:317]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:317]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[15]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:318]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:318]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[23]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:319]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:319]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[31]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:320]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:320]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[12]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:321]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:321]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[7]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:322]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:322]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[12]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[18]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[9]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[19]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:326]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[27]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_AWADDR[14]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:328]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:328]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/mem_controller_0_M_AXI_WDATA[0]'. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:329]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:329]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:329]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc:329]
+Finished Parsing XDC File [C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc]
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3130.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 363 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 88 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 192 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3130.500 ; gain = 0.000
+current_project axi_ram_v1_0_project
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_reg' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_next' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'mem' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SIZE' by 1023 for port or parameter 'State'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'MAX_SIZE' by 1023 for port or parameter 'Ising'
+INFO: [IP_Flow 19-3166] Bus Interface 's_axi': References existing memory map 's_axi'.
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]

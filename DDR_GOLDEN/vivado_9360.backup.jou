@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Mar 18 23:26:10 2026
+# Process ID: 9360
+# Current directory: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14668 C:\Users\khanm\Downloads\Memory_Controller-main\Memory_Controller-main\DDR_GOLDEN\DDR_GOLDEN.xpr
+# Log file: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/vivado.log
+# Journal file: C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_bram_test_0_0
+set_property location {1 97 865} [get_bd_cells rst_mig_7series_0_81M]
