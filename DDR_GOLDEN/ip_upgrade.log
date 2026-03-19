@@ -1,3 +1,45 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Mar 19 18:58:28 2026
+| Host         : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_ram_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_ram_0_0 (xilinx.com:user:axi_ram:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Thu Mar 19 18:43:41 2026
+| Host         : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_ram_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_ram_0_0 (xilinx.com:user:axi_ram:1.0) from (Rev. 5) to (Rev. 8)
+
+
+
+
+
+
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
