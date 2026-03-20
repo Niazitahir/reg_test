@@ -1,10 +1,10 @@
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Thu Mar 19 19:15:58 2026
-// Host        : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
+// Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+// Date        : Thu Mar 19 20:38:48 2026
+// Host        : DESKTOP-CDKE44D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0_sim_netlist.v
+//               C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0_sim_netlist.v
 // Design      : design_1_axi_ram_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 
 (* CHECK_LICENSE_TYPE = "design_1_axi_ram_0_0,axi_ram,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "package_project" *) 
-(* X_CORE_INFO = "axi_ram,Vivado 2018.3" *) 
+(* X_CORE_INFO = "axi_ram,Vivado 2018.3.1" *) 
 (* NotValidForBitStream *)
 module design_1_axi_ram_0_0
    (clk,
@@ -175,7 +175,6 @@ module design_1_axi_ram_0_0_axi_ram
     s_axi_rready,
     s_axi_arsize,
     s_axi_awlen,
-    rst,
     clk,
     s_axi_awburst,
     s_axi_awid,
@@ -186,6 +185,7 @@ module design_1_axi_ram_0_0_axi_ram
     s_axi_bready,
     s_axi_awaddr,
     s_axi_arvalid,
+    rst,
     s_axi_arlen,
     s_axi_araddr);
   output s_axi_wready;
@@ -203,7 +203,6 @@ module design_1_axi_ram_0_0_axi_ram
   input s_axi_rready;
   input [2:0]s_axi_arsize;
   input [7:0]s_axi_awlen;
-  input rst;
   input clk;
   input [1:0]s_axi_awburst;
   input [7:0]s_axi_awid;
@@ -214,6 +213,7 @@ module design_1_axi_ram_0_0_axi_ram
   input s_axi_bready;
   input [15:0]s_axi_awaddr;
   input s_axi_arvalid;
+  input rst;
   input [7:0]s_axi_arlen;
   input [15:0]s_axi_araddr;
 
@@ -9120,10 +9120,11 @@ module design_1_axi_ram_0_0_axi_ram
   wire [7:0]s_axi_awlen;
   wire s_axi_awready;
   wire s_axi_awready_next;
-  wire s_axi_awready_reg_i_2_n_0;
+  wire s_axi_awready_reg_i_1_n_0;
   wire s_axi_awready_reg_i_3_n_0;
   wire s_axi_awready_reg_i_4_n_0;
   wire s_axi_awready_reg_i_5_n_0;
+  wire s_axi_awready_reg_i_6_n_0;
   wire [2:0]s_axi_awsize;
   wire s_axi_awvalid;
   wire [7:0]s_axi_bid;
@@ -11088,7 +11089,7 @@ module design_1_axi_ram_0_0_axi_ram
         .I2(s_axi_wvalid),
         .I3(s_axi_wready_reg_reg_n_0),
         .I4(write_state_reg),
-        .I5(s_axi_awready_reg_i_2_n_0),
+        .I5(s_axi_awready_reg_i_3_n_0),
         .O(write_state_next));
   (* FSM_ENCODED_STATES = "WRITE_STATE_BURST:01,WRITE_STATE_RESP:10,WRITE_STATE_IDLE:00" *) 
   FDRE #(
@@ -11098,7 +11099,7 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(write_state_next),
         .Q(write_state_reg),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-5 {cell *THIS*}}" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "127" *) 
@@ -79056,9 +79057,9 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(read_state_next),
         .Q(read_state_reg),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   LUT5 #(
-    .INIT(32'h20222222)) 
+    .INIT(32'h80888888)) 
     s_axi_arready_reg_i_1
        (.I0(s_axi_arready_reg_i_2_n_0),
         .I1(rst),
@@ -79098,45 +79099,50 @@ module design_1_axi_ram_0_0_axi_ram
         .D(s_axi_arready_reg_i_1_n_0),
         .Q(s_axi_arready_reg_reg_0),
         .R(1'b0));
+  LUT1 #(
+    .INIT(2'h1)) 
+    s_axi_awready_reg_i_1
+       (.I0(rst),
+        .O(s_axi_awready_reg_i_1_n_0));
   LUT6 #(
     .INIT(64'h0000F0F04040FF00)) 
-    s_axi_awready_reg_i_1
-       (.I0(s_axi_awready_reg_i_2_n_0),
+    s_axi_awready_reg_i_2
+       (.I0(s_axi_awready_reg_i_3_n_0),
         .I1(s_axi_wvalid),
-        .I2(s_axi_awready_reg_i_3_n_0),
-        .I3(s_axi_awready_reg_i_4_n_0),
+        .I2(s_axi_awready_reg_i_4_n_0),
+        .I3(s_axi_awready_reg_i_5_n_0),
         .I4(s_axi_wready_reg_reg_n_0),
         .I5(write_state_reg),
         .O(s_axi_awready_next));
   LUT5 #(
     .INIT(32'hFFFEFFFF)) 
-    s_axi_awready_reg_i_2
+    s_axi_awready_reg_i_3
        (.I0(write_count_reg[1]),
         .I1(write_count_reg[2]),
         .I2(write_count_reg[3]),
         .I3(write_count_reg[4]),
-        .I4(s_axi_awready_reg_i_5_n_0),
-        .O(s_axi_awready_reg_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    s_axi_awready_reg_i_3
-       (.I0(s_axi_bready),
-        .I1(s_axi_bvalid),
+        .I4(s_axi_awready_reg_i_6_n_0),
         .O(s_axi_awready_reg_i_3_n_0));
   LUT2 #(
-    .INIT(4'h7)) 
+    .INIT(4'hB)) 
     s_axi_awready_reg_i_4
+       (.I0(s_axi_bready),
+        .I1(s_axi_bvalid),
+        .O(s_axi_awready_reg_i_4_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    s_axi_awready_reg_i_5
        (.I0(s_axi_awvalid),
         .I1(s_axi_awready),
-        .O(s_axi_awready_reg_i_4_n_0));
+        .O(s_axi_awready_reg_i_5_n_0));
   LUT4 #(
     .INIT(16'h0001)) 
-    s_axi_awready_reg_i_5
+    s_axi_awready_reg_i_6
        (.I0(write_count_reg[7]),
         .I1(write_count_reg[6]),
         .I2(write_count_reg[5]),
         .I3(write_count_reg[0]),
-        .O(s_axi_awready_reg_i_5_n_0));
+        .O(s_axi_awready_reg_i_6_n_0));
   FDRE #(
     .INIT(1'b0)) 
     s_axi_awready_reg_reg
@@ -79144,7 +79150,7 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(s_axi_awready_next),
         .Q(s_axi_awready),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   LUT6 #(
     .INIT(64'h00DD000000DDD000)) 
     \s_axi_bid_reg[7]_i_1 
@@ -79153,7 +79159,7 @@ module design_1_axi_ram_0_0_axi_ram
         .I2(s_axi_wvalid),
         .I3(s_axi_wready_reg_reg_n_0),
         .I4(write_state_reg),
-        .I5(s_axi_awready_reg_i_2_n_0),
+        .I5(s_axi_awready_reg_i_3_n_0),
         .O(s_axi_bid_next));
   FDRE #(
     .INIT(1'b0)) 
@@ -79227,7 +79233,7 @@ module design_1_axi_ram_0_0_axi_ram
         .I2(s_axi_wvalid),
         .I3(s_axi_wready_reg_reg_n_0),
         .I4(write_state_reg),
-        .I5(s_axi_awready_reg_i_2_n_0),
+        .I5(s_axi_awready_reg_i_3_n_0),
         .O(s_axi_bvalid_next));
   FDRE #(
     .INIT(1'b0)) 
@@ -79236,7 +79242,7 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(s_axi_bvalid_next),
         .Q(s_axi_bvalid),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s_axi_rdata_reg[0]_i_2 
@@ -94485,13 +94491,13 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(s_axi_rvalid_reg_i_1_n_0),
         .Q(s_axi_rvalid),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   LUT6 #(
     .INIT(64'h00000000F088FF88)) 
     s_axi_wready_reg_i_1
        (.I0(s_axi_awvalid),
         .I1(s_axi_awready),
-        .I2(s_axi_awready_reg_i_2_n_0),
+        .I2(s_axi_awready_reg_i_3_n_0),
         .I3(s_axi_wready_reg_reg_n_0),
         .I4(s_axi_wvalid),
         .I5(write_state_reg),
@@ -94504,7 +94510,7 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(s_axi_wready_next),
         .Q(s_axi_wready_reg_reg_n_0),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   (* ORIG_CELL_NAME = "s_axi_wready_reg_reg" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -94513,13 +94519,13 @@ module design_1_axi_ram_0_0_axi_ram
         .CE(1'b1),
         .D(s_axi_wready_reg_rep_i_1_n_0),
         .Q(s_axi_wready),
-        .R(rst));
+        .R(s_axi_awready_reg_i_1_n_0));
   LUT6 #(
     .INIT(64'h00000000F088FF88)) 
     s_axi_wready_reg_rep_i_1
        (.I0(s_axi_awvalid),
         .I1(s_axi_awready),
-        .I2(s_axi_awready_reg_i_2_n_0),
+        .I2(s_axi_awready_reg_i_3_n_0),
         .I3(s_axi_wready_reg_reg_n_0),
         .I4(s_axi_wvalid),
         .I5(write_state_reg),

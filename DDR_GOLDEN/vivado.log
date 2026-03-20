@@ -1125,3 +1125,7 @@ ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
+current_project DDR_GOLDEN
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 19:08:14 2026...

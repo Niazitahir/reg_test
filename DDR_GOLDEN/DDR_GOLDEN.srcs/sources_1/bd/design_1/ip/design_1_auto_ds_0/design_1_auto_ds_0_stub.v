@@ -1,11 +1,11 @@
-// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Thu Mar 19 18:46:08 2026
-// Host        : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
+// Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+// Date        : Mon Mar  2 14:19:41 2026
+// Host        : DESKTOP-CDKE44D running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_ds_0 -prefix
-//               design_1_auto_ds_0_ design_1_auto_ds_0_stub.v
-// Design      : design_1_auto_ds_0
+//               design_1_auto_ds_0_ design_1_auto_ds_3_stub.v
+// Design      : design_1_auto_ds_3
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1
 // --------------------------------------------------------------------------------
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "axi_dwidth_converter_v2_1_18_top,Vivado 2018.3" *)
+(* X_CORE_INFO = "axi_dwidth_converter_v2_1_18_top,Vivado 2018.3.1" *)
 module design_1_auto_ds_0(s_axi_aclk, s_axi_aresetn, s_axi_awid, 
   s_axi_awaddr, s_axi_awlen, s_axi_awsize, s_axi_awburst, s_axi_awlock, s_axi_awcache, 
   s_axi_awprot, s_axi_awregion, s_axi_awqos, s_axi_awvalid, s_axi_awready, s_axi_wdata, 

@@ -1,112 +1,63 @@
-/******************************************************************************
-*
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Except as contained in this notice, the name of the Xilinx shall not be used
-* in advertising or otherwise to promote the sale, use or other dealings in
-* this Software without prior written authorization from Xilinx.
-*
-******************************************************************************/
-
-#include <stdio.h>
-#include "xparameters.h"
-#include "xil_types.h"
-#include "xstatus.h"
-#include "xil_testmem.h"
-
-#include "platform.h"
-#include "memory_config.h"
 #include "xil_printf.h"
+#include "xil_io.h"
+#include <stdint.h>
 
-/*
- * memory_test.c: Test memory ranges present in the Hardware Design.
- *
- * This application runs with D-Caches disabled. As a result cacheline requests
- * will not be generated.
- *
- * For MicroBlaze/PowerPC, the BSP doesn't enable caches and this application
- * enables only I-Caches. For ARM, the BSP enables caches by default, so this
- * application disables D-Caches before running memory tests.
- */
 #define BASE 0x44A00000
+#define WORDS_PER_REGION 1024
+#define REGION_SIZE_BYTES 4096
 
-void putnum(unsigned int num);
+// Helper: write then read and verify
+int test_region(uint32_t region, const char *name)
+{
+    uint32_t base = BASE + (region << 12);   // region * 4KB
+    xil_printf("Testing region %s at 0x%08lx\n\r", name, base);
 
-void test_memory_range(struct memory_range_s *range) {
-    XStatus status;
+    // Write pattern
+    for (int i = 0; i < WORDS_PER_REGION; i++) {
+        uint32_t addr = base + (i << 2);
+        uint32_t val  = (region << 28) | i;  // unique pattern
+        Xil_Out32(addr, val);
+    }
 
-    /* This application uses print statements instead of xil_printf/printf
-     * to reduce the text size.
-     *
-     * The default linker script generated for this application does not have
-     * heap memory allocated. This implies that this program cannot use any
-     * routines that allocate memory on heap (printf is one such function).
-     * If you'd like to add such functions, then please generate a linker script
-     * that does allocate sufficient heap memory.
-     */
+    // Read back
+    for (int i = 0; i < WORDS_PER_REGION; i++) {
+        uint32_t addr = base + (i << 2);
+        uint32_t expected = (region << 28) | i;
+        uint32_t got = Xil_In32(addr);
 
-    print("Testing memory region: "); print(range->name);  print("\n\r");
-    print("    Memory Controller: "); print(range->ip);  print("\n\r");
-    #ifdef __MICROBLAZE__
-        print("         Base Address: 0x"); putnum(range->base); print("\n\r");
-        print("                 Size: 0x"); putnum(range->size); print (" bytes \n\r");
-    #else
-        xil_printf("         Base Address: 0x%lx \n\r",range->base);
-        xil_printf("                 Size: 0x%lx bytes \n\r",range->size);
-    #endif
+        if (got != expected) {
+            xil_printf("FAIL %s: addr=0x%08lx expected=0x%08lx got=0x%08lx\n\r",
+                       name, addr, expected, got);
+            return -1;
+        }
+    }
 
-    status = Xil_TestMem32((u32*)range->base, 1024, 0xAAAA5555, XIL_TESTMEM_ALLMEMTESTS);
-    print("          32-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
-
-    status = Xil_TestMem16((u16*)range->base, 2048, 0xAA55, XIL_TESTMEM_ALLMEMTESTS);
-    print("          16-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
-
-    status = Xil_TestMem8((u8*)range->base, 4096, 0xA5, XIL_TESTMEM_ALLMEMTESTS);
-    print("           8-bit test: "); print(status == XST_SUCCESS? "PASSED!":"FAILED!"); print("\n\r");
-
+    xil_printf("PASS %s\n\r", name);
+    return 0;
 }
 
 int main()
 {
-    int i;
+    xil_printf("Starting AXI RAM test...\n\r");
 
-    init_platform();
+    test_region(0x0, "Local_H");
+    test_region(0x1, "ADB");
+    test_region(0x2, "Weights");
+    test_region(0x3, "State");
+    test_region(0x4, "Ising");
 
-    print("--Starting Memory Test Application--\n\r");
-    print("NOTE: This application runs with D-Cache disabled.");
-    print("As a result, cacheline requests will not be generated\n\r");
+    // ctrl_reg is only 1 word
+    uint32_t ctrl_addr = BASE + (0x5 << 12);
+    xil_printf("Testing ctrl_reg at 0x%08lx\n\r", ctrl_addr);
 
-    for (i = 0; i < n_memory_ranges; i++) {
-        test_memory_range(&memory_ranges[i]);
-    }
-    volatile uint32_t *reg = (uint32_t *)BASE;
+    Xil_Out32(ctrl_addr, 0xA5A5A5A5);
+    uint32_t ctrl_val = Xil_In32(ctrl_addr);
 
-    //reg[0]1= 0xDEADBEEF;   // write to offset 0
-    xil_printf("Return: %d\n", reg[1]);
-    print("--Memory Test Application Complete--\n\r");
+    if (ctrl_val == 0xA5A5A5A5)
+        xil_printf("PASS ctrl_reg\n\r");
+    else
+        xil_printf("FAIL ctrl_reg: got 0x%08lx\n\r", ctrl_val);
 
-    cleanup_platform();
+    xil_printf("AXI RAM test complete.\n\r");
     return 0;
 }

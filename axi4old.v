@@ -276,6 +276,10 @@ always @* begin
         end
     endcase
 end
+wire [31:0] waddr = write_addr_reg - 32'h44A00000;
+wire [11:0] windex = waddr[11:0];     // offset inside region
+wire [15:0] wregion = waddr[15:12];   // 4 KB regions
+
 
 always @(posedge clk) begin
     write_state_reg <= write_state_next;
@@ -291,14 +295,15 @@ always @(posedge clk) begin
     s_axi_bid_reg <= s_axi_bid_next;
     s_axi_bvalid_reg <= s_axi_bvalid_next;
     if (mem_wr_en) begin
-            case(write_addr_valid)
-                16'h0000:   local_h[write_addr_valid[3:0]] <= s_axi_wdata;
-                16'h1000:   ADB[write_addr_valid[3:0]] <= s_axi_wdata;
-                16'h2000:   Weights[write_addr_valid[3:0]] <= s_axi_wdata;
-                16'h3000:   State[write_addr_valid[3:0]] <= s_axi_wdata;
-                16'h4000:   Ising[write_addr_valid[3:0]] <= s_axi_wdata;
-                16'h5000:   ctrl_reg <= s_axi_wdata;
-            endcase
+        case(wregion)
+            4'h0: local_h[windex[3:0]] <= s_axi_wdata;
+            4'h1: ADB[windex[3:0]]     <= s_axi_wdata;
+            4'h2: Weights[windex[3:0]] <= s_axi_wdata;
+            4'h3: State[windex[3:0]]   <= s_axi_wdata;
+            4'h4: Ising[windex[3:0]]   <= s_axi_wdata;
+            4'h5: ctrl_reg            <= s_axi_wdata;
+        endcase
+
     end
     //mem[write_addr_valid][WORD_SIZE*i +: WORD_SIZE] <= s_axi_wdata[WORD_SIZE*i +: WORD_SIZE];
 
@@ -370,6 +375,10 @@ always @* begin
         end
     endcase
 end
+wire [31:0] raddr = read_addr_reg - 32'h44A00000;
+wire [11:0] rindex = raddr[11:0];     // offset inside region
+wire [15:0] rregion = raddr[15:12];   // 4 KB regions
+
 
 always @(posedge clk) begin
     read_state_reg <= read_state_next;
@@ -387,15 +396,15 @@ always @(posedge clk) begin
 
     // Capture BRAM read data (BRAM outputs data after 1-cycle latency)
     if (mem_rd_en) begin
-        case(write_addr_valid)
-                16'h0000:   s_axi_rdata_reg <= local_h[read_addr_valid];
-                16'h1000:   s_axi_rdata_reg <= ADB[read_addr_valid];
-                16'h2000:   s_axi_rdata_reg <= Weights[read_addr_valid];
-                16'h3000:   s_axi_rdata_reg <= State[read_addr_valid];
-                16'h4000:   s_axi_rdata_reg <= Ising[read_addr_valid];
-                16'h5000:   s_axi_rdata_reg <= ctrl_reg;
-                default:   s_axi_rdata_reg <= 32'b0;
+        case(rregion)
+            4'h0: local_h[rindex[3:0]] <= s_axi_wdata;
+            4'h1: ADB[rindex[3:0]]     <= s_axi_wdata;
+            4'h2: Weights[rindex[3:0]] <= s_axi_wdata;
+            4'h3: State[rindex[3:0]]   <= s_axi_wdata;
+            4'h4: Ising[rindex[3:0]]   <= s_axi_wdata;
+            4'h5: ctrl_reg            <= s_axi_wdata;
         endcase
+
         //s_axi_rdata_reg <= (read_addr_valid > 4) ? bram_doutb : bram_douta;
     end
 
