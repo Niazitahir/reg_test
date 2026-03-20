@@ -71,23 +71,23 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/wt [current_project]
-  set_property parent.project_path C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.xpr [current_project]
+  set_property webtalk.parent_dir /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.cache/wt [current_project]
+  set_property parent.project_path /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/mem
-  C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/bram_test
-  C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4
+  /home/ece532/Github/reg_test/mem
+  /home/ece532/Github/reg_test/DDR_GOLDEN/bram_test
+  /home/ece532/Github/reg_test/axi4
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/ip [current_project]
+  set_property ip_output_repo /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd
+  add_files /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc
+  read_xdc /home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/constrs_1/new/gold.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7a100tcsg324-1
   set_param project.isImplRun false

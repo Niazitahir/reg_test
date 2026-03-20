@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:axi_ram:1.0
-// IP Revision: 10
+// IP Revision: 12
 
-(* X_CORE_INFO = "axi_ram,Vivado 2018.3.1" *)
+(* X_CORE_INFO = "axi_ram,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "design_1_axi_ram_0_0,axi_ram,{}" *)
-(* CORE_GENERATION_INFO = "design_1_axi_ram_0_0,axi_ram,{x_ipProduct=Vivado 2018.3.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_ram,x_ipVersion=1.0,x_ipCoreRevision=10,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=32,ADDR_WIDTH=16,STRB_WIDTH=4,ID_WIDTH=8,PIPELINE_OUTPUT=0,VALID_ADDR_WIDTH=14}" *)
+(* CORE_GENERATION_INFO = "design_1_axi_ram_0_0,axi_ram,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_ram,x_ipVersion=1.0,x_ipCoreRevision=12,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=32,ADDR_WIDTH=16,STRB_WIDTH=4,ID_WIDTH=8,PIPELINE_OUTPUT=0,VALID_ADDR_WIDTH=14}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_axi_ram_0_0 (

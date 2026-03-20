@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:axi_ram:1.0
-// IP Revision: 10
+// IP Revision: 12
 
 `timescale 1ns/1ps
 

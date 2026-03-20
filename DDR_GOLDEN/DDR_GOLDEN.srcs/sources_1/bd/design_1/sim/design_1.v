@@ -1,15 +1,15 @@
-//Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-//Date        : Thu Mar 19 20:37:20 2026
-//Host        : DESKTOP-CDKE44D running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+//Date        : Fri Mar 20 12:19:48 2026
+//Host        : khan-biggiecheese running 64-bit Ubuntu 24.04.2 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=41,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"=6,\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"=6,\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"=4,\"\"\"\"\"\"\"\"da_mb_cnt\"\"\"\"\"\"\"\"=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=41,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,\"\"\"\"\"\"\"\"\"da_axi4_cnt\"\"\"\"\"\"\"\"\"=6,\"\"\"\"\"\"\"\"\"da_board_cnt\"\"\"\"\"\"\"\"\"=6,\"\"\"\"\"\"\"\"\"da_clkrst_cnt\"\"\"\"\"\"\"\"\"=4,\"\"\"\"\"\"\"\"\"da_mb_cnt\"\"\"\"\"\"\"\"\"=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (ddr2_sdram_addr,
     ddr2_sdram_ba,

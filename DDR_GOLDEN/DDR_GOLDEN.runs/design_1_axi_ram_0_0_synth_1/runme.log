@@ -3,33 +3,31 @@
     with args -log design_1_axi_ram_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_ram_0_0.tcl
 
 
-****** Vivado v2018.3.1 (64-bit)
-  **** SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
-  **** IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source design_1_axi_ram_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/mem'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/bram_test'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/axi4'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.cache/ip 
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ece532/Github/reg_test/mem'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ece532/Github/reg_test/DDR_GOLDEN/bram_test'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ece532/Github/reg_test/axi4'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/bin/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top design_1_axi_ram_0_0 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17148 
-WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:88]
-WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:89]
-WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:90]
+INFO: Helper process launched with PID 2951169 
+WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in axi_ram with formal parameter declaration list [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:64]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 484.160 ; gain = 113.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1363.398 ; gain = 14.527 ; free physical = 4975 ; free virtual = 75254
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ram_0_0' [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/synth/design_1_axi_ram_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'axi_ram' [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:34]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ram_0_0' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/synth/design_1_axi_ram_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:8]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter STRB_WIDTH bound to: 4 - type: integer 
@@ -43,14 +41,61 @@ INFO: [Synth 8-6157] synthesizing module 'axi_ram' [c:/Users/khanm/Downloads/Mem
 	Parameter WRITE_STATE_IDLE bound to: 2'b00 
 	Parameter WRITE_STATE_BURST bound to: 2'b01 
 	Parameter WRITE_STATE_RESP bound to: 2'b10 
-INFO: [Synth 8-5534] Detected attribute (* RAM_STYLE = "distributed" *) [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:148]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:195]
-WARNING: [Synth 8-6014] Unused sequential element s_axi_rid_pipe_reg_reg was removed.  [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:357]
-WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata_pipe_reg_reg was removed.  [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:358]
-WARNING: [Synth 8-6014] Unused sequential element s_axi_rlast_pipe_reg_reg was removed.  [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:359]
-WARNING: [Synth 8-6014] Unused sequential element s_axi_rvalid_pipe_reg_reg was removed.  [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:356]
-INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (1#1) [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/8c0e/axi4.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ram_0_0' (2#1) [c:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/synth/design_1_axi_ram_0_0.v:58]
+	Parameter MAX_SIZE bound to: 1023 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:130]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:132]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:134]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:136]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:138]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:140]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:159]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:233]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:327]
+WARNING: [Synth 8-6014] Unused sequential element write_addr_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:223]
+WARNING: [Synth 8-6014] Unused sequential element write_size_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:225]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:226]
+WARNING: [Synth 8-6014] Unused sequential element local_h_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ADB_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element Weights_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element Ising_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ctrl_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:239]
+WARNING: [Synth 8-6014] Unused sequential element read_addr_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:316]
+WARNING: [Synth 8-6014] Unused sequential element read_size_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:318]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:319]
+WARNING: [Synth 8-6014] Unused sequential element local_h_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ADB_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element Weights_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element State_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element Ising_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ctrl_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:333]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rid_pipe_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:339]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata_pipe_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:340]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rlast_pipe_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:341]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rvalid_pipe_reg_reg was removed.  [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:338]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (1#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ipshared/457a/axi4.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ram_0_0' (2#1) [/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.srcs/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/synth/design_1_axi_ram_0_0.v:58]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[15]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[14]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[13]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[12]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[11]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[10]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[9]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[8]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[7]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[6]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[5]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[4]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[3]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awaddr[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awburst[0]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awlock
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awcache[3]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awcache[2]
@@ -59,7 +104,64 @@ WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awcache[0]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awprot[2]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awprot[1]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[31]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[30]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[29]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[28]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[27]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[26]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[25]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[24]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[23]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[22]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[21]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[20]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[19]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[18]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[17]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[16]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[15]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[14]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[13]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[12]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[11]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[10]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[9]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[8]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[7]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[6]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[5]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[4]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[3]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wdata[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wstrb[3]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wstrb[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wstrb[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wstrb[0]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[15]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[14]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[13]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[12]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[11]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[10]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[9]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[8]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[7]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[6]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[5]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[4]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[3]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_araddr[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arburst[0]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arlock
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arcache[3]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arcache[2]
@@ -69,7 +171,7 @@ WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arprot[2]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arprot[1]
 WARNING: [Synth 8-3331] design axi_ram has unconnected port s_axi_arprot[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 545.320 ; gain = 174.855
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.648 ; gain = 44.777 ; free physical = 4980 ; free virtual = 75259
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -82,10 +184,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 545.320 ; gain = 174.855
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.648 ; gain = 44.777 ; free physical = 4980 ; free virtual = 75260
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 545.320 ; gain = 174.855
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.648 ; gain = 44.777 ; free physical = 4980 ; free virtual = 75260
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -94,31 +196,33 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 857.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1753.516 ; gain = 0.000 ; free physical = 4763 ; free virtual = 75044
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 857.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1753.516 ; gain = 0.000 ; free physical = 4763 ; free virtual = 75044
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 860.023 ; gain = 2.395
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1755.516 ; gain = 2.000 ; free physical = 4762 ; free virtual = 75044
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 860.023 ; gain = 489.559
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4774 ; free virtual = 75055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 860.023 ; gain = 489.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4774 ; free virtual = 75055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 860.023 ; gain = 489.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4774 ; free virtual = 75055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg_reg' in module 'axi_ram'
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -128,7 +232,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg_reg' in mod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'write_state_reg_reg' using encoding 'sequential' in module 'axi_ram'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 860.023 ; gain = 489.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4774 ; free virtual = 75055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -141,25 +245,17 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     16 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 6     
-	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
-	   3 Input     16 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 15    
-	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -170,25 +266,17 @@ Hierarchical RTL Component report
 Module axi_ram 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     16 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 6     
-	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
-	   3 Input     16 Bit        Muxes := 1     
 	   3 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 15    
-	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -207,43 +295,49 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_bresp[1] driven by constant 0
 INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_bresp[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rdata[0] driven by constant 0
 INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rresp[1] driven by constant 0
 INFO: [Synth 8-3917] design design_1_axi_ram_0_0 has port s_axi_rresp[0] driven by constant 0
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awlock
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awcache[3]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awcache[2]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awcache[1]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awcache[0]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awprot[2]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awprot[1]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awprot[0]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_wlast
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arlock
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arcache[3]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arcache[2]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arcache[1]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arcache[0]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arprot[2]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arprot[1]
-WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_arprot[0]
+WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awaddr[15]
+WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awaddr[14]
+WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awaddr[13]
+WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awaddr[12]
+WARNING: [Synth 8-3331] design design_1_axi_ram_0_0 has unconnected port s_axi_awaddr[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'inst/FSM_sequential_write_state_reg_reg[0]' (FDR) to 'inst/s_axi_wready_reg_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 860.023 ; gain = 489.559
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Preliminary Mapping  Report (see note below)
-+---------------------+--------------+----------------+----------------------+--------------------+
-|Module Name          | RTL Object   | Inference      | Size (Depth x Width) | Primitives         | 
-+---------------------+--------------+----------------+----------------------+--------------------+
-|design_1_axi_ram_0_0 | inst/mem_reg | User Attribute | 16 K x 32            | RAM128X1D x 4096   | 
-+---------------------+--------------+----------------+----------------------+--------------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4773 ; free virtual = 75056
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -255,27 +349,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 882.867 ; gain = 512.402
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4693 ; free virtual = 74975
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 887.699 ; gain = 517.234
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping  Report
-+---------------------+--------------+----------------+----------------------+--------------------+
-|Module Name          | RTL Object   | Inference      | Size (Depth x Width) | Primitives         | 
-+---------------------+--------------+----------------+----------------------+--------------------+
-|design_1_axi_ram_0_0 | inst/mem_reg | User Attribute | 16 K x 32            | RAM128X1D x 4096   | 
-+---------------------+--------------+----------------+----------------------+--------------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4693 ; free virtual = 74975
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,10 +366,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/write_size_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/read_size_reg_reg[2] )
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4681 ; free virtual = 74964
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -313,7 +391,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -326,7 +404,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -338,25 +416,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -369,58 +447,50 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+----------+------+
-|      |Cell      |Count |
-+------+----------+------+
-|1     |CARRY4    |     8|
-|2     |LUT1      |     5|
-|3     |LUT2      |    24|
-|4     |LUT3      |    57|
-|5     |LUT4      |    75|
-|6     |LUT5      |   164|
-|7     |LUT6      |  1484|
-|8     |MUXF7     |   544|
-|9     |MUXF8     |   256|
-|10    |RAM128X1D |  4096|
-|11    |FDRE      |   141|
-+------+----------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     7|
+|3     |LUT3 |     5|
+|4     |LUT4 |    14|
+|5     |LUT5 |    10|
+|6     |LUT6 |    11|
+|7     |FDRE |    56|
++------+-----+------+
 
 Report Instance Areas: 
 +------+---------+--------+------+
 |      |Instance |Module  |Cells |
 +------+---------+--------+------+
-|1     |top      |        |  6854|
-|2     |  inst   |axi_ram |  6854|
+|1     |top      |        |   104|
+|2     |  inst   |axi_ram |   104|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74966
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 922.512 ; gain = 237.344
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 922.512 ; gain = 552.047
+Synthesis finished with 0 errors, 0 critical warnings and 95 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1755.516 ; gain = 44.777 ; free physical = 4683 ; free virtual = 74966
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4683 ; free virtual = 74965
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4904 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'design_1_axi_ram_0_0' is not ideal for floorplanning, since the cellview 'axi_ram' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 975.551 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1755.516 ; gain = 0.000 ; free physical = 4695 ; free virtual = 74977
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4096 instances were transformed.
-  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 4096 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+69 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 975.551 ; gain = 616.605
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 975.551 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1755.516 ; gain = 406.645 ; free physical = 4695 ; free virtual = 74977
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1755.516 ; gain = 0.000 ; free physical = 4695 ; free virtual = 74977
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/design_1_axi_ram_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_ram_0_0, cache-ID = 835a2bd7e985aa23
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 975.551 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint '/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/design_1_axi_ram_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_ram_0_0, cache-ID = 6c609ae1c0c59216
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1779.527 ; gain = 0.000 ; free physical = 4694 ; free virtual = 74976
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/khanm/Downloads/Memory_Controller-main/Memory_Controller-main/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/design_1_axi_ram_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/ece532/Github/reg_test/DDR_GOLDEN/DDR_GOLDEN.runs/design_1_axi_ram_0_0_synth_1/design_1_axi_ram_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_ram_0_0_utilization_synth.rpt -pb design_1_axi_ram_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 20:38:49 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 20 12:20:32 2026...
